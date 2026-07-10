@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayal Organizasyon | Zarif Etkinlik Tasarımı</title>
+    <meta name="description" content="Nişan, kına, doğum günü, baby shower, söz ve balon süsleme organizasyonları için zarif etkinlik tasarımı.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="preloader" id="preloader" aria-hidden="true">
+        <div class="preloader__mark">
+            <span>Hayal</span>
+            <small>Organizasyon</small>
+        </div>
+    </div>
+
+    <header class="site-header" id="top">
+        <a class="brand" href="#top" aria-label="Hayal Organizasyon ana sayfa">
+            <span class="brand__name">Hayal</span>
+            <span class="brand__tag">Organizasyon</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Ana menü">
+            <a href="#top" data-i18n="navHome">Ana Sayfa</a>
+            <a href="#about" data-i18n="navAbout">Hakkımızda</a>
+            <a href="#services" data-i18n="navServices">Hizmetlerimiz</a>
+            <a href="#prices" data-i18n="navPrices">Fiyat Listesi</a>
+            <a href="#gallery" data-i18n="navGallery">Galeri</a>
+            <a href="#faq" data-i18n="navFaq">S.S.S</a>
+            <a href="#contact" data-i18n="navContact">İletişim</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Tema Değiştir">🌓</button>
+            
+            <a class="phone-link" href="tel:05555555555">0555 555 55 55</a>
+            <div class="lang-switch" aria-label="Dil seçimi">
+                <button class="lang-btn active" type="button" data-lang="tr">TR</button>
+                <button class="lang-btn" type="button" data-lang="en">EN</button>
+            </div>
+            <a class="btn btn--primary header-quote" href="#quote" data-i18n="quoteBtn">Teklif Al</a>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menüyü aç" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <button class="menu-close" id="menuClose" type="button" aria-label="Menüyü kapat">×</button>
+        <div class="mobile-menu-theme">
+            <span data-i18n="themeLabel">Görünüm:</span>
+            <button class="theme-toggle" id="themeToggleMobile" type="button">🌓</button>
+        </div>
+        <a href="#top" data-i18n="navHome">Ana Sayfa</a>
+        <a href="#about" data-i18n="navAbout">Hakkımızda</a>
+        <a href="#services" data-i18n="navServices">Hizmetlerimiz</a>
+        <a href="#prices" data-i18n="navPrices">Fiyat Listesi</a>
+        <a href="#gallery" data-i18n="navGallery">Galeri</a>
+        <a href="#faq" data-i18n="navFaq">S.S.S</a>
+        <a href="#contact" data-i18n="navContact">İletişim</a>
+        <a class="btn btn--primary" href="#quote" data-i18n="quoteBtn">Teklif Al</a>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+        <section class="hero section-reveal">
+            <div class="hero__content">
+                <p class="eyebrow" data-i18n="heroEyebrow">En özel anlarınız bizimle daha güzel</p>
+                <h1 data-i18n="heroTitle">Hayallerinizi Gerçeğe Dönüştüren Organizasyonlar</h1>
+                <p data-i18n="heroText">Nişan, kına, doğum günü, baby shower, söz ve özel gün organizasyonlarında zarif dokunuşlar.</p>
+                <div class="hero__buttons">
+                    <a class="btn btn--primary" href="#quote" data-i18n="quoteBtn">Teklif Al</a>
+                    <a class="btn btn--ghost" href="tel:05555555555" data-i18n="callBtn">Hemen Ara</a>
+                </div>
+            </div>
+            <div class="hero__visual" aria-label="Organizasyon dekorasyonu">
+                <img src="img/2.jpg" alt="Özel gün dekorasyonu">
+            </div>
+        </section>
+
+        <section class="about section-reveal" id="about">
+            <div class="about__image">
+                <img src="img/4.jpg" alt="Zarif söz organizasyonu">
+            </div>
+            <div class="about__text">
+                <p class="section-kicker" data-i18n="aboutKicker">Hakkımızda</p>
+                <h2 data-i18n="aboutTitle">Biz Kimiz?</h2>
+                <p data-i18n="aboutTextOne">En özel günlerinizin kusursuz geçmesi için yıllardır profesyonel organizasyon hizmeti sunuyoruz.</p>
+                <p data-i18n="aboutTextTwo">Her organizasyonu müşterimizin isteklerine göre kişiye özel tasarlıyor, kaliteli ekipmanlarımız ve deneyimli ekibimizle hayal ettiğiniz atmosferi oluşturuyoruz.</p>
+                <em data-i18n="aboutNote">Çünkü bizim için her organizasyon, unutulmayacak bir anıdır.</em>
+            </div>
+            <div class="stats">
+                <article><strong>250+</strong><span data-i18n="statOne">Mutlu Müşteri</span></article>
+                <article><strong>350+</strong><span data-i18n="statTwo">Tamamlanan Organizasyon</span></article>
+                <article><strong>5 Yıl+</strong><span data-i18n="statThree">Deneyim</span></article>
+                <article><strong>%100</strong><span data-i18n="statFour">Müşteri Memnuniyeti</span></article>
+            </div>
+        </section>
+
+        <section class="services section-reveal" id="services">
+            <div class="section-heading">
+                <p class="section-kicker" data-i18n="servicesKicker">Hizmetlerimiz</p>
+                <h2 data-i18n="servicesTitle">Özel Günlerinize Zarif Dokunuşlar</h2>
+            </div>
+            <div class="service-grid">
+                <article class="service-card"><span>♡</span><h3 data-i18n="serviceOneTitle">Nişan Organizasyonu</h3><p data-i18n="serviceOneText">Şık ve zarif nişan konseptleri ile unutulmaz anlar.</p></article>
+                <article class="service-card"><span>✦</span><h3 data-i18n="serviceTwoTitle">Kına Organizasyonu</h3><p data-i18n="serviceTwoText">Geleneksel ve modern kına geceleri için özel tasarımlar.</p></article>
+                <article class="service-card"><span>🎂</span><h3 data-i18n="serviceThreeTitle">Doğum Günü</h3><p data-i18n="serviceThreeText">Çocuk ve yetişkin doğum günlerinde yaratıcı konseptler.</p></article>
+                <article class="service-card"><span>☁</span><h3 data-i18n="serviceFourTitle">Baby Shower</h3><p data-i18n="serviceFourText">Anne adaylarına özel tatlı ve modern süslemeler.</p></article>
+                <article class="service-card"><span>∞</span><h3 data-i18n="serviceFiveTitle">Söz Organizasyonu</h3><p data-i18n="serviceFiveText">Sade, romantik ve fotojenik söz alanları.</p></article>
+                <article class="service-card"><span>○</span><h3 data-i18n="serviceSixTitle">Balon Süsleme</h3><p data-i18n="serviceSixText">Organik balon kemerleri, zincir balon ve masa süslemeleri.</p></article>
+            </div>
+        </section>
+
+        <section class="prices section-reveal" id="prices">
+            <div class="section-heading">
+                <p class="section-kicker" data-i18n="pricesKicker">Fiyat Listesi</p>
+                <h2 data-i18n="pricesTitle">Sizler İçin Hazırlanan Paketler</h2>
+            </div>
+            <div class="price-grid">
+                <div class="price-card">
+                    <h3 data-i18n="packMiniTitle">Mini Paket</h3>
+                    <div class="price-value">3.500 ₺ <small>/başlayan</small></div>
+                    <ul>
+                        <li data-i18n="packMiniL1">Zarif Arka Fon Standı</li>
+                        <li data-i18n="packMiniL2">Temel Balon/Çiçek Süslemesi</li>
+                        <li data-i18n="packMiniL3">Şık Maket Pasta ve İkramlık Sehpaları</li>
+                        <li data-i18n="packMiniL4">2 Saatlik Kurulum ve Teslimat</li>
+                    </ul>
+                    <a href="#quote" class="btn btn--ghost" data-i18n="choosePack">Seç ve Teklif Al</a>
+                </div>
+                <div class="price-card featured">
+                    <div class="badge" data-i18n="packPopular">En Çok Tercih Edilen</div>
+                    <h3 data-i18n="packStandartTitle">Standart Paket</h3>
+                    <div class="price-value">7.500 ₺ <small>/başlayan</small></div>
+                    <ul>
+                        <li data-i18n="packStandartL1">Geniş Işıklı Arka Fon Seçenekleri</li>
+                        <li data-i18n="packStandartL2">Yoğun Organik Balon veya Canlı Çiçek Tasarımı</li>
+                        <li data-i18n="packStandartL3">Kişiye Özel İsimlik ve Karşılama Panosu</li>
+                        <li data-i18n="packStandartL4">Söz/Nişan Tepsisi ve Masa Aksesuarları</li>
+                    </ul>
+                    <a href="#quote" class="btn btn--primary" data-i18n="choosePack">Seç ve Teklif Al</a>
+                </div>
+                <div class="price-card">
+                    <h3 data-i18n="packPremiumTitle">Premium Paket</h3>
+                    <div class="price-value">12.000 ₺ <small>/başlayan</small></div>
+                    <ul>
+                        <li data-i18n="packPremiumL1">Tamamen Kişiye Özel Büyük Konsept Tasarımı</li>
+                        <li data-i18n="packPremiumL2">Lüks Arka Fon ve Premium Çiçek/Işıklandırma Duvarı</li>
+                        <li data-i18n="packPremiumL3">Karşılama Alanı, Kırmızı Halı ve Şamdanlar</li>
+                        <li data-i18n="packPremiumL4">Profesyonel Ekip ile Tam Gün Planlama Desteği</li>
+                    </ul>
+                    <a href="#quote" class="btn btn--ghost" data-i18n="choosePack">Seç ve Teklif Al</a>
+                </div>
+            </div>
+            <p class="price-notice" data-i18n="priceNotice">* Tercih edilen ek aksesuarlara, kullanılacak çiçek türlerine ve organizasyon konumuna göre fiyatlarımız değişiklik gösterebilir.</p>
+        </section>
+
+        <section class="why section-reveal">
+            <div class="why__item"><strong>01</strong><span data-i18n="whyOne">Kişiye Özel Tasarım</span></div>
+            <div class="why__item"><strong>02</strong><span data-i18n="whyTwo">Kaliteli Malzeme</span></div>
+            <div class="why__item"><strong>03</strong><span data-i18n="whyThree">Zamanında Kurulum</span></div>
+            <div class="why__item"><strong>04</strong><span data-i18n="whyFour">Profesyonel Ekip</span></div>
+        </section>
+
+        <section class="gallery section-reveal" id="gallery">
+            <div class="section-heading">
+                <p class="section-kicker" data-i18n="galleryKicker">Galeri</p>
+                <h2 data-i18n="galleryTitle">Gerçekleştirdiğimiz Anlardan Seçkiler</h2>
+            </div>
+            <div class="gallery-grid">
+                <button class="gallery-card" type="button" data-src="img/1.jpg"><img src="img/1.jpg" alt="Cinsiyet partisi"><span data-i18n="galleryOne">Cinsiyet Partisi</span></button>
+                <button class="gallery-card" type="button" data-src="img/11.jpg"><img src="img/11.jpg" alt="Kına gecesi"><span data-i18n="galleryTwo">Kına Gecesi</span></button>
+                <button class="gallery-card" type="button" data-src="img/33.jpg"><img src="img/33.jpg" alt="Nişan"><span data-i18n="galleryThree">Nişan</span></button>
+                <button class="gallery-card" type="button" data-src="img/66.jpg"><img src="img/66.jpg" alt="Bebek karşılama"><span data-i18n="galleryFour">Bebek Karşılama</span></button>
+                <button class="gallery-card" type="button" data-src="img/5.jpg"><img src="img/5.jpg" alt="Söz"><span data-i18n="galleryFive">Söz</span></button>
+                <button class="gallery-card" type="button" data-src="img/88.jpg"><img src="img/88.jpg" alt="Baby shower"><span data-i18n="gallerySix">Baby Shower</span></button>
+                <button class="gallery-card" type="button" data-src="img/3.jpg"><img src="img/3.jpg" alt="Açık alan"><span data-i18n="gallerySeven">Açık Alan</span></button>
+                <button class="gallery-card" type="button" data-src="img/6.jpg"><img src="img/6.jpg" alt="Işıklı konsept"><span data-i18n="galleryEight">Işıklı Konsept</span></button>
+                <button class="gallery-card" type="button" data-src="img/7.jpg"><img src="img/7.jpg" alt="Beyaz konsept"><span data-i18n="galleryNine">Beyaz Konsept</span></button>
+                <button class="gallery-card" type="button" data-src="img/8.jpg"><img src="img/8.jpg" alt="Drapeli alan"><span data-i18n="galleryTen">Drapeli Alan</span></button>
+                <button class="gallery-card" type="button" data-src="img/22.jpg"><img src="img/22.jpg" alt="Kırmızı kına"><span data-i18n="galleryEleven">Kırmızı Kına</span></button>
+                <button class="gallery-card" type="button" data-src="img/44.jpg"><img src="img/44.jpg" alt="Taht konsepti"><span data-i18n="galleryTwelve">Taht Konsepti</span></button>
+                <button class="gallery-card" type="button" data-src="img/55.jpg"><img src="img/55.jpg" alt="Kapı süsleme"><span data-i18n="galleryThirteen">Kapı Süsleme</span></button>
+                <button class="gallery-card" type="button" data-src="img/77.jpg"><img src="img/77.jpg" alt="Hastane odası"><span data-i18n="galleryFourteen">Hastane Odası</span></button>
+            </div>
+        </section>
+
+        <section class="faq-quote section-reveal" id="faq">
+            <div class="faq">
+                <div class="section-heading section-heading--left">
+                    <p class="section-kicker" data-i18n="faqKicker">Sık Sorulan Sorular</p>
+                    <h2 data-i18n="faqTitle">Merak Ettikleriniz</h2>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__item active">
+                        <button class="accordion__trigger" type="button" data-i18n="faqOneQ">Organizasyonu kaç gün önceden ayırtmalıyım?</button>
+                        <div class="accordion__content"><p data-i18n="faqOneA">Yoğunluğa bağlı olarak en az 2-3 hafta önceden rezervasyon yapmanızı öneriyoruz.</p></div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__trigger" type="button" data-i18n="faqTwoQ">Kurulumu siz mi yapıyorsunuz?</button>
+                        <div class="accordion__content"><p data-i18n="faqTwoA">Evet, ekipman kurulumu ve alan düzenlemesi tamamen profesyonel ekibimiz tarafından titizlikle yapılır.</p></div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__trigger" type="button" data-i18n="faqThreeQ">Kendi konseptimi oluşturabilir miyim?</button>
+                        <div class="accordion__content"><p data-i18n="faqThreeA">Elbette, hayalinizdeki renkleri, temaları ve aksesuarları birlikte seçerek tamamen size özel bir tasarım planlayabiliriz.</p></div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__trigger" type="button" data-i18n="faqFourQ">Ödeme koşullarınız nasıldır?</button>
+                        <div class="accordion__content"><p data-i18n="faqFourA">Rezervasyon sırasında karşılıklı güven adına belirli bir miktar kapora alıyoruz, kalan tutarı ise organizasyon kurulum günü teslim alıyoruz.</p></div>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="quote-form" id="quote">
+                <p class="section-kicker" data-i18n="quoteKicker">Ücretsiz Teklif Alın</p>
+                <h2 data-i18n="quoteTitle">Hayalinizdeki organizasyonu birlikte planlayalım.</h2>
+                <input type="text" name="name" data-i18n-placeholder="namePlaceholder" placeholder="Adınız Soyadınız" required>
+                <input type="tel" name="phone" data-i18n-placeholder="phonePlaceholder" placeholder="Telefon Numaranız" required>
+                <select name="event" required>
+                    <option value="" data-i18n="eventPlaceholder">Organizasyon Türü Seçiniz</option>
+                    <option>Nişan</option>
+                    <option>Kına</option>
+                    <option>Doğum Günü</option>
+                    <option>Baby Shower</option>
+                    <option>Söz</option>
+                    <option>Balon Süsleme</option>
+                </select>
+                <textarea name="message" data-i18n-placeholder="messagePlaceholder" placeholder="Eklemek istedikleriniz"></textarea>
+                <button class="btn btn--primary" type="submit" data-i18n="sendBtn">Teklif Al Gönder</button>
+            </form>
+        </section>
+
+        <section class="contact section-reveal" id="contact">
+            <div>
+                <p class="section-kicker" data-i18n="contactKicker">İletişim</p>
+                <h2 data-i18n="contactTitle">Özel gününüz için konuşalım.</h2>
+            </div>
+            <div class="contact-list">
+                <a href="tel:05555555555">0555 555 55 55</a>
+                <a href="mailto:info@hayalorganizasyon.com">info@hayalorganizasyon.com</a>
+                <span data-i18n="address">Organizasyon Mahallesi No:25 / Türkiye</span>
+            </div>
+        </section>
+    </main>
+
+    <a class="whatsapp" href="https://wa.me/905555555555" target="_blank" rel="noopener" aria-label="WhatsApp ile iletişime geç">☎</a>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Galeriyi kapat">×</button>
+        
+        <div class="lightbox__wrapper">
+            <button class="lightbox__btn lightbox__btn--prev" id="lightboxPrev" type="button" aria-label="Önceki resim">‹</button>
+            <div class="lightbox__image-container">
+                <img id="lightboxImage" src="" alt="Büyük galeri görseli">
+            </div>
+            <button class="lightbox__btn lightbox__btn--next" id="lightboxNext" type="button" aria-label="Sonraki resim">›</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div>
+            <a class="brand" href="#top">
+                <span class="brand__name">Hayal</span>
+                <span class="brand__tag">Organizasyon</span>
+            </a>
+            <p data-i18n="footerText">En özel anlarınızı unutulmaz kılmak için zarif detaylarla yanınızdayız.</p>
+        </div>
+        <div class="footer__links">
+            <a href="#services" data-i18n="navServices">Hizmetlerimiz</a>
+            <a href="#prices" data-i18n="navPrices">Fiyat Listesi</a>
+            <a href="#gallery" data-i18n="navGallery">Galeri</a>
+            <a href="#contact" data-i18n="navContact">İletişim</a>
+        </div>
+        <p class="made-by">© 2026 Hayal Organizasyon. <a href="#" target="_blank" rel="noopener">by ayliz</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
