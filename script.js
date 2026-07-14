@@ -1,4 +1,3 @@
-// Dil metinleri tercüme havuzu (Yeni eklenen alanlar eksiksiz uyarlandı)
 const translations = {
     tr: {
         navHome: "Ana Sayfa",
@@ -216,22 +215,19 @@ const lightboxPrev = document.querySelector("#lightboxPrev");
 const lightboxNext = document.querySelector("#lightboxNext");
 const quoteForm = document.querySelector("#quote");
 
-// Aydınlık / Karanlık Mod Seçicileri
 const themeToggle = document.querySelector("#themeToggle");
 const themeToggleMobile = document.querySelector("#themeToggleMobile");
 
 let currentImageIndex = 0;
 
-// Sayfa Açılış Animasyonu Yönetimi
 window.addEventListener("load", () => {
     setTimeout(() => {
         if (preloader) preloader.classList.add("is-hidden");
     }, 600);
 });
 
-// Aydınlık & Karanlık Mod Fonksiyonu (Local_Storage Destekli)
 function initTheme() {
-    const savedTheme = localStorage.getItem("siteTheme") || "light"; // Varsayılan aydınlık açılır
+    const savedTheme = localStorage.getItem("siteTheme") || "light"; 
     document.documentElement.setAttribute("data-theme", savedTheme);
     
     const handleThemeSwitch = () => {
@@ -246,7 +242,6 @@ function initTheme() {
 }
 initTheme();
 
-// Mobil Menü Mantığı
 function setMenuState(isOpen) {
     mobileMenu.classList.toggle("is-open", isOpen);
     overlay.classList.toggle("is-open", isOpen);
@@ -263,7 +258,6 @@ mobileMenu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => setMenuState(false));
 });
 
-// Bölümler Ekrana Girerken Yumuşakça Belirme Animasyonu
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -275,7 +269,6 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealItems.forEach((item) => revealObserver.observe(item));
 
-// Sık Sorulan Sorular (S.S.S) Akordeon Yapısı
 accordionItems.forEach((item) => {
     const trigger = item.querySelector(".accordion__trigger");
     if (trigger) {
@@ -289,7 +282,6 @@ accordionItems.forEach((item) => {
     }
 });
 
-// Lightbox Belirli Resme Gitme Yapısı
 function showImageAtIndex(index) {
     if (index < 0) {
         currentImageIndex = galleryCards.length - 1;
@@ -304,7 +296,6 @@ function showImageAtIndex(index) {
     }
 }
 
-// Galeri Kartı Tetikleyicileri
 galleryCards.forEach((card, index) => {
     card.addEventListener("click", () => {
         currentImageIndex = index;
@@ -322,7 +313,6 @@ function closeLightbox() {
     lightboxImage.src = "";
 }
 
-// Lightbox İçindeki Navigasyon Buton İşlevleri
 if (lightboxPrev) {
     lightboxPrev.addEventListener("click", (e) => {
         e.stopPropagation();
@@ -345,7 +335,6 @@ lightbox.addEventListener("click", (event) => {
     }
 });
 
-// Klavye Kontrolleri
 document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
         setMenuState(false);
@@ -356,7 +345,6 @@ document.addEventListener("keydown", (event) => {
     }
 });
 
-// Dil Yönetimi Fonksiyonu
 function setLanguage(lang) {
     const dictionary = translations[lang];
     document.documentElement.lang = lang;
@@ -388,7 +376,6 @@ langButtons.forEach((button) => {
 
 setLanguage(localStorage.getItem("siteLanguage") || "tr");
 
-// Teklif Formu İşlemi
 quoteForm.addEventListener("submit", (event) => {
     event.preventDefault();
     const activeLang = document.documentElement.lang;
